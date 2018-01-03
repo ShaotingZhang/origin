@@ -1,0 +1,214 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{amsmath, amsthm, amssymb}
+
+%\usepackage[
+%ps2pdf,                %%% hyper-references for ps2pdf
+%bookmarks=true,%                   %%% generate bookmarks ...
+%bookmarksnumbered=true,%           %%% ... with numbers
+%hypertexnames=false,%              %%% needed for correct links to figures !!!
+%breaklinks=true,%                  %%% breaks lines, but links are very small
+%linkbordercolor={0 0 1}
+%]{hyperref}%  %%% border-width of frames 
+
+%-----------------------------------------------------------
+%Margin setup
+\usepackage[breaklinks=false]{hyperref} 
+
+\setlength{\voffset}{0.0in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{12in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.3in}
+\setlength{\evensidemargin}{-0.7in}
+
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+\usepackage{eurosym}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+% From website http://www.cse.wustl.edu/~mgeorg/html/tildalatex.html
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+\def\urldot{\kern -.10em.\kern -.10em}
+\def\urlhttp{http\kern -.10em\lower -.1ex\hbox{:}\kern -.12em\lower 0ex\hbox{/}\kern -.18em\lower 0ex\hbox{/}}
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Shaoting Zhang}  \\
+  8000 U.S. 290 West Apt.10407 &  {\tt sxz152930@utdallas\urldot edu} \\
+Austin, TX 78736 & {Mobile: (737)-529-7160} \\
+\end{tabular*}
+\\
+
+%\vspace{-2mm}
+
+%\parindent=0.8cm \resheading{~Profile}
+%    \vspace{-4mm}
+%%    \parindent=1cm {Seasoned EDA professional with 8 years of industry experience in algorithm development, implementation, and deployment of high quality CAD tools.  Brings solid design knowledge due to close collaboration with microprocessor design teams.  Strong research experience in physical design and circuit reliability.  Good team player with experience in leading multiple people team to achieve targets on time.}
+%    \parindent=1cm {Seasoned EDA software engineer with 8 years of industry experience in algorithm development, implementation, and deployment of high quality software tools.  Expertise includes optimization algorithms and graph theory with solid implementation in C++/STL.  Good team player with experience in leading multiple people team to achieve targets on time.}
+%\vspace{-3mm}
+
+{
+\vspace{-3mm}
+\center
+\resheading{Seek fulltime position on software engineering starting at Spring 2018}
+\vspace{-10mm}
+\resheading{Immigration Status: F-1 OPT (No need for H1B sponsorship - I-485 pending)}
+\vspace{-7mm}
+}
+
+\resheading{Education}
+\begin{itemize}
+    \vspace{-7mm}
+\item
+    \ressubheading{University of Texas at Dallas}{Dallas, TX}{Master Student, Electrical Engineering} {Aug. 2015 -- Dec. 2017}
+	      \begin{itemize}
+            %\resitem {Major: circuits and systems}
+            \resitem{GPA: 11.4/12}  
+			      \resitem {Relevant Courses: {Design and Analysis of Computer Algorithms (A)}, {Dynamics of Complex Networks and Systems (A)}, {Data Structure}, {Advanced Digital Logic}, {Computer Architecture (A)}}
+	      \end{itemize}
+
+
+\item
+    \ressubheading{{Nanjing University of Post and Telecommunications}}	{Nanjing, China}{Bachelor of Engineering, Department of Communication Engineering}			{Sep. 2009 -- Jul. 2013}
+        \begin{itemize}
+            \resitem {Relevant Courses: {Principles of Communications}, {Signals and Systems}, {Principles of Digital \& Analog Integrated Circuits}, {Random Signals and Statistics}, {Discrete Structures}}
+        \end{itemize}
+
+\end{itemize} % End Education list
+
+\vspace{-3mm}
+%%%%%%%%%%%%%%%%%%%%%
+\vspace{-3mm}
+\resheading{Course Projects}
+\begin{itemize}
+\vspace{-7mm}
+
+
+\item { {\bf Algorithms: Design and Analysis:} Algorithm Analysis and Implementations}
+ \vspace{-1mm}
+	\begin{itemize}
+		\resitem { Python implementations of sorting and graph algorithms, such as QuickSort, MergeSort, Dijkstra's algorithm, Karger's algorithm and computing strongly connected components}
+	\end{itemize}
+ \vspace{-1mm}
+
+		
+\item { {\bf Dynamics of Complex Networks and Systems:} The Network Modeling for Game of Thrones}
+ \vspace{-1mm}
+	\begin{itemize}
+        		\resitem { Build the weighted and undirected network for the character relationship in Game of Thrones}
+		\resitem { Describe and analyze the network properties like the centrality, diameter and power law}
+	\end{itemize}
+  \vspace{-1mm}
+
+\item { {\bf Java Programming: Solving Problems with Software:}}
+ \vspace{-1mm}
+        \begin{itemize}
+		%\resitem { Pump controller design and power, performance, area (PPA) trade-off with Synopsys Design Vision}
+		\resitem { Java implementation and data analysis of a baby-name database from excel datesheet}
+		\resitem { Java implementation of a rating-based recommendation system such as movie recommendation}
+        \end{itemize}
+  \vspace{-1mm}
+
+
+
+\item { {\bf System Design:}}
+ \vspace{-1mm}
+	\begin{itemize}
+		\resitem { {Mini Twitter:} Implement basic functions, such as post tweets, news feed, get timeline, follow/unfollow}
+		\resitem { {Distributed File System:} One client and multiple servers, where the servers are built with peer to peer or master and slave model}
+		\resitem { Location-based Service Implementation with Geohash}
+	\end{itemize}
+ \vspace{-1mm}
+
+
+
+\item { {\bf Computer Architecture:} Cache Simulation and Optimization}
+ \vspace{-1mm}
+	\begin{itemize}
+		\resitem { Cache performance evaluations varying capacities, associativities and block sizes using SimpleScalar}
+		\resitem { Instruction set optimization with parallelism and pipelining techniques: Adopt a SIMD instruction to unfold the ``for" loop; Achieve 26\% improvement on the instruction cache miss rate compared with the original C programs with MediaBench test cases}
+	\end{itemize}
+ \vspace{-1mm}
+ 
+ 
+ 
+
+%\item { {\bf Advanced Digital Logic:}}
+% \vspace{-1mm}
+        %\begin{itemize}
+            %\resitem { {Pump Controller:} Design in Moore machine, Mealy machine and asynchronous circuits. Power, performance and area (PPA) trade-off analysis with Synopsys Design Vision}
+            %\resitem { Pump controller design and power, performance, area (PPA) trade-off with Synopsys Design Vision}
+           % \resitem { Logic synthesis from VHDL to gate-level netlist using Synopsys Design Vision. Fault detection with automatic test pattern generation and logic simulation}
+        %\end{itemize}
+%  \vspace{-1mm}
+
+%\item { {\bf VLSI Design:} The Trivium Stream Cipher} 
+% \vspace{-1mm}
+%	\begin{itemize}
+            %\resitem {Schematic and layout designs for the inverter, 2-input NAND gate, 2-input NOR gate and Flip-Flop in Cadence. Show the energy, power, area and delay using Synopsys HSPICE}
+%		\resitem {Implement the Trivium stream cipher with inverters, NAND gates, NOR gates and Flip-Flops. Functional simulation and testing in schematic and layout}
+%	\end{itemize}
+%  \vspace{-1mm}
+
+%\item { {\bf Analog IC Design:} A High-Gain, High-Speed Operational Amplifier}
+% \vspace{-1mm}
+%		    \begin{itemize}
+%           \resitem {Design a fast-settling op-amp for a switched-capacitor pipeline analog-to-digital converter (ADC)}
+%			     \resitem {Design a folded cascode single-stage topology under settling time constraint with Cadence Virtuoso and Synopsys HSPICE}
+%		    \end{itemize}
+%  \vspace{-1mm}
+
+\end{itemize}
+
+\vspace{-3mm}
+\resheading{Skills}
+\begin{description}
+    \vspace{-7mm}
+\item[Languages/Scripting:] Python, Java, C language, SPICE/HDL
+   \vspace{-1mm}
+\item[Applications:] Unix/Linux System, Eclipse, Git, Matlab
+%\item[Applications:] Unix System, Microsoft Office, Matlab
+\vspace{-1mm}
+\item[Miscellaneous:] Self-motivated, good communication and team-work skills.
+\end{description}
+
+
+\vspace{-3mm}
+\resheading{Work Experience}
+\begin{itemize}
+\vspace{-7mm}
+\item
+    \ressubheading{{China Electronics Technology Group Corporation}}{Nanjing, China}{Silicon Testing Engineer}{Jul. 2013 -- Jul. 2014}
+             { %\small
+        		\begin{itemize}
+            		\resitem {Wafer level testing before IC packaging}
+            		\resitem {Quality testing of power tube inside the gold bonding for silicon BJT (Bipolar Junction Transistor) and LDMOS (Laterally Diffused Metal Oxide Semiconductor). Parameter testing and performance evaluations on output power and power gain fluctuations of BJT and LDMOS}	
+        		\end{itemize}
+             }
+
+\end{itemize}
+
+
+\end{document}
